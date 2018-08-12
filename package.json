@@ -4,8 +4,8 @@
     "version": "1.0.0",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "scripts": {
-        "dev": "webpack-dev-server --config js-app/webpack.config.js --mode development --open",
-        "build": "webpack --config js-app/webpack.config.js --mode production",
+        "dev": "webpack-dev-server --config js-app/webpack.dev.js --mode development --open",
+        "build": "webpack --config js-app/webpack.build.js --mode production",
         "android:check": "cordova requirements android",
         "android:build": "cordova build android --verbose",
         "android:run": "cordova run android"
@@ -34,7 +34,8 @@
         "style-loader": "^0.21.0",
         "webpack": "^4.12.1",
         "webpack-cli": "^3.0.8",
-        "webpack-dev-server": "^3.1.4"
+        "webpack-dev-server": "^3.1.4",
+        "webpack-merge": "^4.1.4"
     },
     "cordova": {
         "plugins": {

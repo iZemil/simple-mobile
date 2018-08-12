@@ -4,9 +4,9 @@ import PlayGame from './scenes/PlayGame';
 import EndGame from './scenes/EndGame';
 
 const gameConfig = {
-    thpe: Phaser.CANVAS,
-    width: 600,
-    height: 600,
+    type: Phaser.Auto,
+    width: window.innerWidth,
+    height: window.innerHeight,
     backgroundColor: 0x87cefa,
     scene: [PlayGame]
 };
